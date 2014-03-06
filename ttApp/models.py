@@ -69,6 +69,7 @@ class SUBJECT(models.Model):
         db_table = 'SUBJECT'
 
 class TASK(models.Model):
+
     _id = models.AutoField(primary_key=True)
     GLOBAL_ID = models.CharField(max_length=36)
     NAME = models.CharField(max_length=30)
@@ -89,6 +90,7 @@ class TASK(models.Model):
         db_table = 'TASK'
 
 class HOLIDAY(models.Model):
+
     _id = models.AutoField(primary_key=True)
     GLOBAL_ID = models.CharField(max_length=36)
     NAME = models.CharField(max_length=30)
@@ -120,6 +122,7 @@ class HOLIDAY(models.Model):
 #
 #     class Meta:
 #         db_table = 'AUDIT_TRAIL'
+# TODO something
 
 class LESSON_TYPE(models.Model):
     _id = models.AutoField(primary_key=True)
@@ -137,6 +140,7 @@ class LESSON_TYPE(models.Model):
         db_table = 'LESSON_TYPE'
 
 class LOCATION(models.Model):
+
     _id = models.AutoField(primary_key=True)
     GLOBAL_ID = models.CharField(max_length=36)
     NAME = models.CharField(max_length=30)
